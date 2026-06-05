@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Smart Pond</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Smart Pond Control Center</h1>
+            <p>Sistem Pemantauan & Kendali Sirkulasi Kolam Lele</p>
+        </header>
+
+        <!-- SECTION 1: MONITORING CARD -->
+        <main class="monitoring-section">
+            <div class="card" id="card-ph">
+                <h3>Derajat Keasaman (pH)</h3>
+                <div class="value" id="ph-value">--</div>
+                <div class="status" id="ph-status">Memuat data...</div>
+            </div>
+
+            <div class="card" id="card-turbidity">
+                <h3>Kekeruhan Air</h3>
+                <div class="value" id="turbidity-value">--%</div>
+                <div class="status" id="turbidity-status">Memuat data...</div>
+            </div>
+        </main>
+
+        <!-- SECTION 2: CONTROL PANEL -->
+        <section class="control-section">
+            <h2>Panel Kendali Jarak Jauh</h2>
+            <div class="control-grid">
+                <div class="control-box">
+                    <p>Katup Pembuangan (Solenoid)</p>
+                    <button id="btn-katup" class="btn btn-off">OFF</button>
+                </div>
+                <div class="control-box">
+                    <p>Pompa Pengisian Air Bersih</p>
+                    <button id="btn-pompa" class="btn btn-off">OFF</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Panggil file logika JavaScript utama kita (pindah konfigurasi Firebase ke app.js saja biar rapi) -->
+    <script type="module" src="app.js"></script>
+</body>
+</html>
