@@ -16,7 +16,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: 600px; /* Cocok untuk layar HP */
+    max-width: 600px;
 }
 
 header {
@@ -38,8 +38,8 @@ header p {
 /* Desain Kartu Monitoring */
 .monitoring-section {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
+    grid-template-columns: 1fr; /* Stack Vertikal */
+    gap: 20px;
     margin-bottom: 30px;
 }
 
@@ -49,7 +49,7 @@ header p {
     border-radius: 12px;
     text-align: center;
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05);
-    border-bottom: 5px solid #cbd5e1; /* Default abu-abu sebelum terhubung */
+    border-bottom: 5px solid #cbd5e1;
 }
 
 .card h3 {
@@ -59,7 +59,7 @@ header p {
 }
 
 .card .value {
-    font-size: 32px;
+    font-size: 42px; /* Diperbesar agar kontras */
     font-weight: bold;
     color: #0f172a;
     margin-bottom: 5px;
@@ -68,6 +68,25 @@ header p {
 .card .status {
     font-size: 12px;
     font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.card .timestamp {
+    font-size: 11px;
+    color: #94a3b8;
+}
+
+/* Kustomisasi Card Grafik */
+.chart-card {
+    border-bottom: 5px solid #3b82f6; 
+    padding: 20px 15px;
+}
+
+.chart-container {
+    position: relative;
+    height: 220px; /* Tinggi optimal untuk layar mobile & desktop */
+    width: 100%;
+    margin-top: 15px;
 }
 
 /* Variasi Warna Status */
